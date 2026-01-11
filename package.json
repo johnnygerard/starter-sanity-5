@@ -12,7 +12,8 @@
     "@types/react": "^19.1",
     "eslint": "^9.28",
     "prettier": "3.7.4",
-    "typescript": "^5.8"
+    "typescript": "^5.8",
+    "vite-tsconfig-paths": "^6.0.4"
   },
   "devEngines": {
     "packageManager": {
