@@ -14,11 +14,22 @@
     "prettier": "3.7.4",
     "typescript": "^5.8"
   },
-  "keywords": [
-    "sanity"
-  ],
-  "license": "UNLICENSED",
-  "main": "package.json",
+  "devEngines": {
+    "packageManager": {
+      "name": "npm",
+      "onFail": "error",
+      "version": "11"
+    },
+    "runtime": {
+      "name": "node",
+      "onFail": "error",
+      "version": "24"
+    }
+  },
+  "engines": {
+    "node": "24",
+    "npm": "11"
+  },
   "name": "starter-sanity-5",
   "private": true,
   "scripts": {
@@ -35,5 +46,6 @@
     "start": "sanity start",
     "ts:check": "tsc --noEmit"
   },
-  "version": "1.0.0"
+  "type": "module",
+  "version": "0.0.0"
 }
