@@ -6,3 +6,6 @@
 # Sanity
 /.sanity
 /dist
+
+# TypeScript
+/tsconfig.tsbuildinfo
