@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@sanity/icons": "^3.7.4",
     "@sanity/vision": "^5.2.0",
     "react": "^19.1",
     "react-dom": "^19.1",
