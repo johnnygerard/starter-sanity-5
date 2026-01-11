@@ -1,20 +1,6 @@
 {
-  "name": "starter-sanity-5",
-  "private": true,
-  "version": "1.0.0",
-  "main": "package.json",
-  "license": "UNLICENSED",
-  "scripts": {
-    "dev": "sanity dev",
-    "start": "sanity start",
-    "build": "sanity build",
-    "deploy": "sanity deploy",
-    "deploy-graphql": "sanity graphql deploy"
-  },
-  "keywords": [
-    "sanity"
-  ],
   "dependencies": {
+    "@sanity/icons": "^3.7.4",
     "@sanity/vision": "^5.2.0",
     "react": "^19.1",
     "react-dom": "^19.1",
@@ -25,13 +11,42 @@
     "@sanity/eslint-config-studio": "^6.0.0",
     "@types/react": "^19.1",
     "eslint": "^9.28",
-    "prettier": "^3.5",
-    "typescript": "^5.8"
+    "prettier": "3.7.4",
+    "typescript": "^5.8",
+    "vite-tsconfig-paths": "^6.0.4"
   },
-  "prettier": {
-    "semi": false,
-    "printWidth": 100,
-    "bracketSpacing": false,
-    "singleQuote": true
-  }
+  "devEngines": {
+    "packageManager": {
+      "name": "npm",
+      "onFail": "error",
+      "version": "11"
+    },
+    "runtime": {
+      "name": "node",
+      "onFail": "error",
+      "version": "24"
+    }
+  },
+  "engines": {
+    "node": "24",
+    "npm": "11"
+  },
+  "name": "starter-sanity-5",
+  "private": true,
+  "scripts": {
+    "build": "npm run ts:check && sanity build",
+    "deploy": "sanity deploy",
+    "deploy-graphql": "sanity graphql deploy",
+    "dev": "sanity dev",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint",
+    "preview": "npm run build && sanity preview --port 3334",
+    "qa": "npm run format:check && npm run lint && npm run build",
+    "sanity": "SANITY_ACTIVE_ENV=development sanity",
+    "start": "sanity start",
+    "ts:check": "tsc --noEmit"
+  },
+  "type": "module",
+  "version": "0.0.0"
 }
