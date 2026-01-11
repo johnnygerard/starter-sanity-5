@@ -6,13 +6,8 @@ import { schemaTypes } from "./src/schema-types";
 export default defineConfig({
   name: "default",
   title: "Sanity 5 Starter",
-
-  projectId: "srzdwb3a",
   dataset: "production",
-
+  projectId: "srzdwb3a",
   plugins: [structureTool(), visionTool()],
-
-  schema: {
-    types: schemaTypes,
-  },
+  schema: { types: schemaTypes },
 });
