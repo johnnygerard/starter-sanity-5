@@ -13,6 +13,11 @@ export const apiVersion = assertAndGetVariable(
   "SANITY_STUDIO_API_VERSION",
 );
 
+export const appId = assertAndGetVariable(
+  process.env.SANITY_STUDIO_APP_ID,
+  "SANITY_STUDIO_APP_ID",
+);
+
 export const dataset = assertAndGetVariable(
   process.env.SANITY_STUDIO_DATASET,
   "SANITY_STUDIO_DATASET",

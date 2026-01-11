@@ -1,6 +1,6 @@
 import { defineCliConfig } from "sanity/cli";
 import tsconfigPaths from "vite-tsconfig-paths";
-import { dataset, projectId } from "~/environment";
+import { appId, dataset, projectId } from "~/environment";
 
 /*
 Examples of Sanity CLI read-only commands:
@@ -18,6 +18,8 @@ export default defineCliConfig({
     projectId,
   },
   deployment: {
+    // Enable fine grained version selection (https://www.sanity.io/docs/studio/latest-version-of-sanity#k0896ed4574b7)
+    appId,
     // https://www.sanity.io/docs/studio/latest-version-of-sanity#k47faf43faf56
     autoUpdates: true,
   },
