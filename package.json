@@ -42,7 +42,7 @@
     "lint": "eslint",
     "preview": "npm run build && sanity preview --port 3334",
     "qa": "npm run format:check && npm run lint && npm run build",
-    "sanity": "sanity",
+    "sanity": "SANITY_ACTIVE_ENV=development sanity",
     "start": "sanity start",
     "ts:check": "tsc --noEmit"
   },
