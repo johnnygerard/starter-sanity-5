@@ -33,7 +33,7 @@
   "name": "starter-sanity-5",
   "private": true,
   "scripts": {
-    "build": "sanity build",
+    "build": "npm run ts:check && sanity build",
     "deploy": "sanity deploy",
     "deploy-graphql": "sanity graphql deploy",
     "dev": "sanity dev",
@@ -41,7 +41,7 @@
     "format:check": "prettier --check .",
     "lint": "eslint",
     "preview": "npm run build && sanity preview --port 3334",
-    "qa": "npm run format:check && npm run ts:check && npm run lint && npm run build",
+    "qa": "npm run format:check && npm run lint && npm run build",
     "sanity": "sanity",
     "start": "sanity start",
     "ts:check": "tsc --noEmit"
