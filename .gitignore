@@ -7,5 +7,9 @@
 /.sanity
 /dist
 
+# Sanity TypeGen (https://www.sanity.io/docs/apis-and-sdks/sanity-typegen)
+/sanity.types.ts
+/schema.json
+
 # TypeScript
 /tsconfig.tsbuildinfo

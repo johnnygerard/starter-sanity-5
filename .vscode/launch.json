@@ -5,8 +5,7 @@
       "preLaunchTask": "npm: dev",
       "request": "launch",
       "runtimeArgs": [
-        "--auto-open-devtools-for-tabs",
-        "--user-data-dir=${userHome}/.config/google-chrome-vscode"
+        "--user-data-dir=${userHome}/.config/google-chrome-sanity"
       ],
       "type": "chrome",
       "url": "http://localhost:3333",
@@ -17,8 +16,7 @@
       "preLaunchTask": "npm: preview",
       "request": "launch",
       "runtimeArgs": [
-        "--auto-open-devtools-for-tabs",
-        "--user-data-dir=${userHome}/.config/google-chrome-vscode"
+        "--user-data-dir=${userHome}/.config/google-chrome-sanity"
       ],
       "type": "chrome",
       "url": "http://localhost:3334",

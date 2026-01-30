@@ -36,6 +36,9 @@ export const postType = defineType({
       name: "image",
       title: "Featured Image",
       type: "image",
+      options: {
+        hotspot: true,
+      },
     }),
     defineField({
       name: "body",
